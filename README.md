@@ -20,13 +20,20 @@ This repo will run a GitHub action every 20 minutes to check for new code on the
 Create and run the new container as you would normally do:
 
 ```sh
-docker run -d ei99070/docker-fluidd
+docker run -d \
+  --name fluidd \
+  --net=host \
+  ei99070/docker-fluidd
 ```
 
 By default the server runs on port 80, but this can be changed by specifying the `PORT` environment variable.
 
 ```sh
-docker run -d -e PORT=<alternative port> ei99070/docker-fluidd
+docker run -d \
+  --name fluidd \
+  --net=host \
+  -e PORT=<alternative port> \
+  ei99070/docker-fluidd
 ```
 
 ## Available tags
