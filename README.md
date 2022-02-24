@@ -13,7 +13,7 @@ Simple Docker image running the latest [Fluidd](https://github.com/fluidd-core/f
 >
 > Fluidd related issues must be reported directly on the Fluidd official repo.
 
-This repo will run a GitHub action every 20 minutes to check for new code on the "master" and "develop" branches of the Fluidd repository, and creates a new Docker images if there are any modifications.
+This repo will run a GitHub action every 20 minutes to check for new code on the "master" and "develop" branches of the Fluidd repository, and creates new Docker images if there are any modifications.
 
 ## Usage
 
