@@ -51,7 +51,7 @@ jobs:
       - name: Install Fluidd dependencies
         if: ${{ steps.check.outputs.build_image == 'true' }}
         run: |
-          npm ci --ignore-scripts --no-optional
+          npm ci --no-optional
         working-directory: ./fluidd
 
       - name: Build Fluidd
