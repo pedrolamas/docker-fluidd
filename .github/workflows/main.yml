@@ -58,13 +58,13 @@ jobs:
         if: ${{ steps.check.outputs.build_image == 'true' }}
         run: |
           npm ci --no-optional
-        working-directory: ./fluidd
+        working-directory: fluidd
 
       - name: Build Fluidd
         if: ${{ steps.check.outputs.build_image == 'true' }}
         run: |
           npm run build
-        working-directory: ./fluidd
+        working-directory: fluidd
 
       - name: Prepare GitHub metadata
         if: ${{ steps.check.outputs.build_image == 'true' }}
